@@ -1,4 +1,4 @@
-# Ordina JWorks Tech Blog
+# Ordina NCore Tech Blog
 
 ## Running the blog with Docker
 
