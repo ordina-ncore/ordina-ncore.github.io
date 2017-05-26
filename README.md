@@ -8,24 +8,39 @@
     - After making changes in the blog run, the blog is automatically rebuilt
 
 ## Setting up Jekyll on your Mac or Linux
-You need to have at least Ruby 2.4.0 installed, this can be easily accomplished by using [rvm](https://rvm.io).
+### Installing on Mac
+You need to have at least Ruby 2.4.0 installed, this can be easily accomplished by using [rbenv](https://github.com/rbenv/rbenv) since Ruby is typically outdated in version managers.
 
 Execute the following commands:
 
-    $ rvm install 2.4.0
-    $ rvm use 2.4.0
+    $ brew install rbenv ruby-build
+
+    # Add rbenv to bash so that it loads every time you open a terminal
+    $ echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+    source ~/.bash_profile
+
+    # Install Ruby
+    $ rbenv install 2.4.0
+    $ rbenv global 2.4.0
+    $ ruby -v
     $ (sudo) gem install bundler
     $ bundle install
+    # Install Jekyll
+    $ gem install jekyll
+
+Try `xcode-select —install` when you run into issues.
 
 ## Running Jekyll on your Mac or Linux
 - Run `jekyll serve` in the root directory of the tech blog
 - Browse to [http://localhost:4000/](http://localhost:4000/)
 
 ## Add yourself as an author
-- Create a **feature branch**, starting from **source**: feature/author-update-john-doe
+- Create a **feature branch**, starting from **source**: feature/author-update-{first name}-{surname}
+`git checkout -b feature/author-update-{first name}-{surname}`
 - Add yourself to the **_data/authors.yml** file
 - Add a picture of yourself to the **img** folder
-- **Rebase** your changes onto the **source** branch
+- **Rebase** your changes onto the **source** branch `git pull --rebase origin master` 
+- Push your changes: `git push` (don't forget to switch back to the master branch: `git checkout master` afterwards)
 - Create a **pull request**, this will be reviewed and merged by one of the competence leaders
 
 ## Create a new blog post
@@ -42,7 +57,7 @@ Execute the following commands:
     - comments: true
 - Write your blog
 - Save your file in the **_post** directory using the following file format: *{year}-{month}-{day}-{title}.md*
-	- **example**: *2015-11-09-Awesome-Blog-Post.md*
+    - **example**: *2015-11-09-Awesome-Blog-Post.md*
 - Be sure to publish as **plain text**! (Jekyll will generate the static HTML for us)
 - Tweak and commit your changes until you feel satisfied with it
 
