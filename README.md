@@ -8,11 +8,13 @@
     - After making changes in the blog run, the blog is automatically rebuilt
 
 ## Setting up Jekyll on your Mac or Linux
+You need to have at least Ruby 2.4.0 installed.
 ### Installing on Mac
-You need to have at least Ruby 2.4.0 installed, this can be easily accomplished by using [rbenv](https://github.com/rbenv/rbenv) since Ruby is typically outdated in version managers.
+Installing Ruby can easily be accomplished by using [rbenv](https://github.com/rbenv/rbenv) since Ruby is typically outdated in version managers.
 
 Execute the following commands:
 
+    # Install rbenv
     $ brew install rbenv ruby-build
 
     # Add rbenv to bash so that it loads every time you open a terminal
@@ -24,9 +26,9 @@ Execute the following commands:
     $ rbenv global 2.4.0
     $ ruby -v
     $ (sudo) gem install bundler
+
+    # cd to the project root folder that contains the GemFile
     $ bundle install
-    # Install Jekyll
-    $ gem install jekyll
 
 Try `xcode-select —install` when you run into issues.
 
