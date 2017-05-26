@@ -69,6 +69,11 @@
     width: 4em;
   }
 
+  .disabled {
+   pointer-events: none;
+   cursor: default;
+  }
+
   .links {
     list-style: none;
     margin-bottom: (_size(element-margin) - 0.5em);
