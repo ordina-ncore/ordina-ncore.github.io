@@ -10,3 +10,15 @@ jens_gheerardyn:
   title2: Competence Leader Security
   email: jens.gheerardyn@ordina.be
   bio: Jens is a Software Engineer at Ordina Belgium, focussed on Security. Passionate about CQRS, .NET Core, Architecture, Performance and Scaling.
+pieter_nijs:
+  first_name: Pieter
+  last_name: Nijs
+  github: PieEatingNinjas
+  twitter: nijspieter
+  linkedin: pieter-nijs-40791b3b
+  permalink: /author/pieter-nijs/
+  avatar: pieter-nijs.jpg
+  title: Software Engineer
+  title2: Competence Leader Mobile
+  email: pieter.nijs@ordina.be
+  bio: Pieter is a Software Engineer at Ordina Belgium, passionate about mobile development. Xamarin, UWP, XAML, .NET and Azure are a few of the things that excite him the most.
