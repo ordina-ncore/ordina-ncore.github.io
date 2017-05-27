@@ -45,7 +45,7 @@ Now let us go dive into some more detail.
 </div>
 <div class="1u">&nbsp;</div>
 <div class="7u">
-In order to prevent tampering with the data we need some sort of validation. A hash or more specific a cryptographic hash function can map data from an arbitrary size to a fixed size. Such a function is also called a non-ivertible or a one-way function. The input will always generate the same output but you cannot figure out the input from the output, hence the term one-way. 
+In order to prevent tampering with the data we need some sort of validation. A hash or more specific a cryptographic hash function, such a function maps data from an arbitrary size to a fixed size. Such a function is also called a non-ivertible or a one-way function. The input will always generate the same output but you cannot figure out the input from the output, hence the term one-way. 
 
 {% include image.html img="/img/blockchain/sha256.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
 
@@ -63,7 +63,19 @@ The hash has always the same length no matter the input.
 
 
 # Block
-PlaceHolder
+Creating just a hash from some input is not very complicated and has no real added value. Where the added value comes from is that there is a constraint. The constraint makes it harder to create a hash. When we look at the constraint from Bitcoin today we will see that the all the hashes have 18 leading 0's.
+
+Given some input we get an output, now we want to make the output complicated therefor we need to add a nonce. For our example we add the constraint that the nonce should have 4 leading 0's.
+
+{% include image.html img="/img/blockchain/block-empty.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
+
+On an empty input everything is okay, now let's find out what happens when we change the input to NCore.
+
+{% include image.html img="/img/blockchain/block-ncore.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
+
+The moment we changed the data to NCore the hash violated the constraint and became invalid. In order to fix this, we need to find a matching nonce. You can probably guess why there is a "Mine" button at the bottom.
+
+{% include image.html img="/img/blockchain/block-ncore-mined.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
 
 # Blockchain
 Placeholder
