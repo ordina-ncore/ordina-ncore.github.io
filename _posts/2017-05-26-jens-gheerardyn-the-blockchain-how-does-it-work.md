@@ -46,6 +46,18 @@ Now let us go dive into some more detail.
 <div class="1u">&nbsp;</div>
 <div class="7u">
 In order to prevent tampering with the data we need some sort of validation. A hash or more specific a cryptographic hash function can map data from an arbitrary size to a fixed size. Such a function is also called a non-ivertible or a one-way function. The input will always generate the same output but you cannot figure out the input from the output, hence the term one-way. 
+
+{% include image.html img="/img/blockchain/sha256.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
+
+The hash for ncore will always be the same. Even an empty value has a hash value.
+
+{% include image.html img="/img/blockchain/sha256-empty.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
+
+Let's take a very long Lorem Ipsum and see what happens
+
+{% include image.html img="/img/blockchain/sha256-lorem-ipsum.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
+
+The hash has always the same length no matter the input.
 </div>
 </div>
 
