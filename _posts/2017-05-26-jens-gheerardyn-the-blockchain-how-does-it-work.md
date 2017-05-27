@@ -65,7 +65,7 @@ The hash has always the same length no matter the input.
 # Block
 Creating just a hash from some input is not very complicated and has no real added value. Where the added value comes from is that there is a constraint. The constraint makes it harder to create a hash. When we look at the constraint from Bitcoin today we will see that the all the hashes have 18 leading 0's.
 
-Given some input we get an output, now we want to make the output complicated therefor we need to add a nonce. For our example we add the constraint that the nonce should have 4 leading 0's.
+Given some input we get an output, now we want to make the output more complicated therefore we need to add a nonce. For our example we add the constraint that the nonce should has 4 leading 0's.
 
 {% include image.html img="/img/blockchain/block-empty.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
 
