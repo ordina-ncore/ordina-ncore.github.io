@@ -1,7 +1,7 @@
 ---
 layout: post
 authors: [pieter_nijs]
-title: 'Techorama 2017 - Review and takeaways'
+title: 'Techorama 2017 - My thoughts and takeaways'
 image: /img/techorama2017/ncore.jpg
 tags: [Techorama, conferences]
 category: Conferences
