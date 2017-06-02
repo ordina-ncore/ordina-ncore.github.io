@@ -66,7 +66,7 @@ I’ve seen a lot of great session this year. And there are a few things that st
 - Microservices are the next big thing after REST
 - But it is not the silver bullet, it won’t solve things like wrong requirements or bad processes.
 - It is very important to model the structure of the company when going for micoservices (Conway's law).
-- Passing and id from one service to another (instead of the whole object) doesn’t make the system loosely coupled when both services connect to the same DB in the end.
+- Passing an id from one service to another (instead of the whole object) doesn’t make the system loosely coupled when both services connect to the same DB in the end.
 - Don’t try to fight things that just need to be done (adding a field to the DB and showing it on the screen will always require you to do some work on multiple levels/layers)
 - Every service should use the tools/frameworks that are best suited to deal with the problem.
 
