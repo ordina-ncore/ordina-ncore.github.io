@@ -2,7 +2,7 @@
 layout: post
 authors: [pieter_nijs]
 title: 'Techorama 2017 - My thoughts and takeaways'
-image: /img/techorama2017/ncore.jpg
+image: /img/Techorama2017/ncore.jpg
 tags: [Techorama, conferences]
 category: Conferences
 comments: true
@@ -28,7 +28,7 @@ I’ve seen a lot of great session this year. And there are a few things that st
 - The Gu can get UI tests working in Visual Studio Mobile Center (I don’t… )
 - The Gu knows how to close VIM!
 
-![Microservices](/img/techorama2017/thegu.jpg)
+![Microservices](/img/Techorama2017/thegu.jpg)
 
 **Containerized Delivery with Visual Studio Team Services and Docker (Rene van Osnabrugge)**
 
@@ -70,7 +70,7 @@ I’ve seen a lot of great session this year. And there are a few things that st
 - Don’t try to fight things that just need to be done (adding a field to the DB and showing it on the screen will always require you to do some work on multiple levels/layers)
 - Every service should use the tools/frameworks that are best suited to deal with the problem.
 
-![Microservices](/img/techorama2017/microservices.jpg)
+![Microservices](/img/Techorama2017/microservices.jpg)
 
 **Reactive programming by Example (Peter Himschoot / Lander Verhack)**
 - Reactive programming is like collections in an asynchronous way.
@@ -80,7 +80,7 @@ I’ve seen a lot of great session this year. And there are a few things that st
 - Reactive programming is not there to solve only specific problems like Search, it can be used in a wide spectrum (but I guess you only see that when you have a good understanding of it)
 
 **DevOps on the Microsoft Stack with Donovan Brown**
-![That's what it is all about](/img/techorama2017/devops.jpg)
+![That's what it is all about](/img/Techorama2017/devops.jpg)
 - Donovan Brown is a great guy! I talked to him before his session, he is a very nice guy to talk to.
 - He shares my opinion and pains about Visual Studio Mobile Center: it is a good start, but things like UI test should be fully integrated in the pipeline…
 - … the team is working hard on this (and other) features that will make Mobile Center great!
