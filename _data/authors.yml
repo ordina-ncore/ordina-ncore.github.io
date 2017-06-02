@@ -58,3 +58,15 @@ gertjan_vanthienen:
   title2: Competence Leader Azure
   email: gertjan.vanthienen@ordina.be
   bio: 
+stieve_verheyden:
+  first_name: Stieve
+  last_name: Verheyden
+  github: stieve
+  twitter: verheydenstieve
+  linkedin: stieveverheyden
+  permalink: /author/stieve-verheyden/
+  avatar: stieve-verheyden.jpg
+  title: Software Engineer
+  title2: Competence Leader Web
+  email: stieve.verheyden@ordina.be
+  bio: Stieve Verheyden is a Software Engineer and competence leader at Ordina Belgium. Stieve is passionate about everything related to .NET and web development. He loves the fact that there is always something new to learn. Javascript, Typescript, Angular and ASP.NET Core are just a few things that excite him the most.
