@@ -28,7 +28,7 @@ I’ve seen a lot of great session this year. And there are a few things that st
 - The Gu can get UI tests working in Visual Studio Mobile Center (I don’t… )
 - The Gu knows how to close VIM!
 
-![Microservices]({{ '/img/Techorama2017/thegu.jpg' | prepend: site.baseurl }})
+![Microservices](/img/Techorama2017/thegu.jpg)
 
 **Containerized Delivery with Visual Studio Team Services and Docker (Rene van Osnabrugge)**
 
