@@ -3,7 +3,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
     
     site.posts.docs.each { |post|
         post.data['authors'].collect! { |author_username|
-            site.data['authors']["pieter_nijs"]
+            site.data['authors'][author_username]
         }.compact!
     }
 end
