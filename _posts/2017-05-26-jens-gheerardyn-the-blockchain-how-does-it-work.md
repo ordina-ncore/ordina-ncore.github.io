@@ -51,11 +51,11 @@ In order to prevent tampering with the data we need some sort of validation. A h
 
 The hash for ncore will always be the same. Even an empty value has a hash value.
 
-{% include image.html img="/img/blockchain/sha256-empty.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
+{% include image.html img="/img/blockchain/sha256-empty.png" %}
 
 Let's take a very long Lorem Ipsum and see what happens
 
-{% include image.html img="/img/blockchain/sha256-lorem-ipsum.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
+{% include image.html img="/img/blockchain/sha256-lorem-ipsum.png" %}
 
 The hash has always the same length no matter the input.
 </div>
@@ -67,27 +67,29 @@ Creating just a hash from some input is not very complicated and has no real add
 
 Given some input we get an output, now we want to make the output more complicated therefore we need to add a nonce. For our example we add the constraint that the nonce should has 4 leading 0's.
 
-{% include image.html img="/img/blockchain/block-empty.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
+{% include image.html img="/img/blockchain/block-empty.png" %}
 
 On an empty input everything is okay, now let's find out what happens when we change the input to NCore.
 
-{% include image.html img="/img/blockchain/block-ncore.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
+{% include image.html img="/img/blockchain/block-ncore.png" %}
 
 The moment we changed the data to NCore the hash violated the constraint and became invalid. In order to fix this, we need to find a matching nonce. You can probably guess why there is a "Mine" button at the bottom.
 
-{% include image.html img="/img/blockchain/block-ncore-mined.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
+{% include image.html img="/img/blockchain/block-ncore-mined.png" %}
 
 # Blockchain
-Placeholder
+A blockchain is a chain of blocks. The current block takes the hash of the previous block. The chain breaks when you to modify a value, this is exactly why they describe the blockchain as immutable. It is append only.
+
+{% include image.html img="/img/blockchain/blockchain.png" %}
 
 # Distributed
-Placeholder
+{% include image.html img="/img/blockchain/distributed.png" %}
 
 # Tokens
-Placeholder
+{% include image.html img="/img/blockchain/tokens.png" %}
 
 # Coinbase
-Placeholder
+{% include image.html img="/img/blockchain/coinbase.png" %}
 
 # Bitcoin
 Placeholder
