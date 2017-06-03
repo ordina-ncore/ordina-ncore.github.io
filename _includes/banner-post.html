@@ -6,7 +6,7 @@ Posted {{ page.date | date: "%b %-d, %Y" }}
 
 {% if page.authors != empty %}
     by
-{{ site.data['authors'] | jsonify }}
+{{ site.data['authors']["pieter_nijs"] }}
 {{ page.authors | jsonify }}
     {% for author in page.authors %}
         <a href="{{ author.permalink | prepend: site.baseurl }}">{{author.first_name}} {{author.last_name}}</a>
