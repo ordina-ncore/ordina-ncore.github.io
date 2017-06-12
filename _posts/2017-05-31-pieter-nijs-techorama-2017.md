@@ -1,13 +1,13 @@
 ---
 layout: post
-authors: [pieter_nijs]
+authors: ["pieter_nijs"]
 title: 'Techorama 2017 - My thoughts and takeaways'
 image: /img/Techorama2017/ncore.jpg
 tags: [Techorama, conferences]
 category: Conferences
 comments: true
 ---
-> As every year, Ordina Belgium sends a whole bunch of consultants to Techorama. After all, we are – together with Microsoft – Platinum partner of this great event.
+> As every year, Ordina Belgium sends a whole bunch of consultants to Techorama. After all, we are – together with Microsoft – Ultimate partner of this great event.
 In this blogpost, I’ll briefly summarize my overall thoughts of this event and I’ll go deeper into some things I’ve picked up from some sessions.
 
 # Overall
