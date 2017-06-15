@@ -9,4 +9,4 @@ branches:
   only:
   - master
 after_success:
-  - .travis/push.sh
+  - ./push.sh
