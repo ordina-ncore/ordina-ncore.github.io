@@ -8,3 +8,5 @@ env:
 branches:
   only:
   - master
+after_success:
+  - push.sh
