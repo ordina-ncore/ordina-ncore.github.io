@@ -70,3 +70,15 @@ stieve_verheyden:
   title2: Competence Leader Web
   email: stieve.verheyden@ordina.be
   bio: Stieve Verheyden is a Software Engineer and competence leader at Ordina Belgium. Stieve is passionate about everything related to .NET and web development. He loves the fact that there is always something new to learn. Javascript, Typescript, Angular and ASP.NET Core are just a few things that excite him the most.
+kevin_bosteels:
+  first_name: Kevin
+  last_name: Bosteels
+  github: bosken85
+  twitter: kevinbosteels
+  linkedin: kevinbosteels
+  permalink: /author/kevin_bosteels/
+  avatar: kevin-bosteels.jpg
+  title: Software Engineer
+  title2: Competence Leader Architecture
+  email: kevin.bosteels@ordina.be
+  bio: Kevin Bosteels is a Software Engineer and competence leader at Ordina Belgium. He is full-stack developer with roots in both frond and back-end technologies. He likes playing with technologies and looking for new ways to integrate them in enterprise applications. His main domain lies in the .Net stack but is constantly looking for the right tools for specific tasks.
