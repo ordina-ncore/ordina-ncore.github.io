@@ -1,6 +1,9 @@
 language: ruby
 sudo: false
 rvm: 2.2.0
+before_script:
+  - git config --local user.name 'nCore'
+  - git config --local user.email 'ncore@noreply.github.com'
 script: bundle exec rake deploy
 env:
   global:
@@ -8,5 +11,3 @@ env:
 branches:
   only:
   - master
-after_success:
-  - ./push.sh
