@@ -2,8 +2,8 @@ language: ruby
 sudo: false
 rvm: 2.2.0
 before_script:
-  -
-  -
+  - git config --local user.name 'Jekyll'
+  - git config --local user.email 'ncore@noreply.travis.com'
 script: bundle exec rake deploy
 env:
   global:
