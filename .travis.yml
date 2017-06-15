@@ -1,9 +1,6 @@
 language: ruby
 sudo: false
 rvm: 2.2.0
-before_script:
-  - git config --global user.email "tim.hulstaert@telenet.be"
-  - git config --global user.name "timhulstaert"
 script: bundle exec rake deploy
 env:
   global:
@@ -11,3 +8,5 @@ env:
 branches:
   only:
   - master
+after_success:
+  - ./push.sh
