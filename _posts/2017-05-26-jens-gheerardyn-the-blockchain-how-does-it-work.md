@@ -91,8 +91,12 @@ Until now we just had a data input area, without it being really useful. Let us 
 {% include image.html img="/img/blockchain/tokens.png" %}
 
 # Coinbase
-But there is still a problem at this stage. How do we start transferring money if nobody has money in his account. 
+But there is still a problem at this stage. How do we start transferring money if nobody has money in his account. In this sample at block #1 100 dollar was added to the account of "Anders". In block #2 we see that another 100 dollar was added. This gives a total of 200 dollar, however we need to deduct 60 dollar from it as we can see in the Transaction section.
 {% include image.html img="/img/blockchain/coinbase.png" %}
 
 # Bitcoin
-Placeholder
+Let us look at a block of Bitcoin in detail and explain everything we see. 
+The hash of block #125552 is: "00000000000000001e8d6829a8a21adc5d38d0a473b144b6765798e61f98bd1d"
+
+We see 2 transactions here, the first transaction is the coinbase. New money is added to the account of "15nNvBTUdMaiZ6d3GWCeXFu2MagXL3XM1q". When we look at the second transaction, we see a combination of a coinbase and tokens. Account "1HuppjXz7dPrt2a67LqacDW5T4VanFrpqC" received 29,5 bitcoins and tranferred them to 2 seperate accounts.
+{% include image.html img="/img/blockchain/blockexplorer.png" %}
