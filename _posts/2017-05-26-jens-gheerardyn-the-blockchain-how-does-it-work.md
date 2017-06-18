@@ -47,6 +47,8 @@ Now let us go dive into some more detail.
 <div class="7u">
 In order to prevent tampering with the data we need some sort of validation. A hash or more specific a cryptographic hash function, such a function maps data from an arbitrary size to a fixed size. Such a function is also called a non-ivertible or a one-way function. The input will always generate the same output but you cannot figure out the input from the output, hence the term one-way. 
 
+Sha256 is a hashing algorithm with an output of 256 bits or 64 hexadecimal characters. A Hexadecimal character uses 4 bits per character: 256/4=64
+
 {% include image.html img="/img/blockchain/sha256.png" alt="Hash algorithm - variable size to fixed size" title="Hash algorithm - variable size to fixed size" %}
 
 The hash for ncore will always be the same. Even an empty value has a hash value.
@@ -63,7 +65,7 @@ The hash has always the same length no matter the input.
 
 
 # Block
-Creating just a hash from some input is not very complicated and has no real added value. Where the added value comes from is that there is a constraint. The constraint makes it harder to create a hash. When we look at the constraint from Bitcoin today we will see that the all the hashes have 18 leading 0's.
+Creating just a hash from some input is not very complicated and has no real added value. Where the added value comes from is that there is a constraint. The constraint makes it harder to create a hash. When we look at the constraint from Bitcoin today we will see that the all the hashes have 16 leading 0's.
 
 Given some input we get an output, now we want to make the output more complicated therefore we need to add a nonce. For our example we add the constraint that the nonce should has 4 leading 0's.
 
