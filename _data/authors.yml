@@ -10,3 +10,75 @@ jens_gheerardyn:
   title2: Competence Leader Security
   email: jens.gheerardyn@ordina.be
   bio: Jens is a Software Engineer at Ordina Belgium, focussed on Security. Passionate about CQRS, .NET Core, Architecture, Performance and Scaling.
+pieter_nijs:
+  first_name: Pieter
+  last_name: Nijs
+  github: PieEatingNinjas
+  twitter: nijspieter
+  linkedin: pieter-nijs-40791b3b
+  permalink: /author/pieter-nijs/
+  avatar: pieter-nijs.jpg
+  title: Software Engineer
+  title2: Competence Leader Mobile
+  email: pieter.nijs@ordina.be
+  bio: Pieter is a Software Engineer at Ordina Belgium, passionate about mobile development. Xamarin, UWP, XAML, .NET and Azure are a few of the things that excite him the most.
+gill_cleeren:
+  first_name: Gill
+  last_name: Cleeren
+  github: gillcleeren
+  twitter: gillcleeren
+  linkedin: 
+  permalink: /author/gill-cleeren/
+  avatar: gill-cleeren.jpg
+  title: Practice Manager
+  title2: Architect
+  email: gill.cleeren@ordina.be
+  bio: 
+stijn_cleeren:
+  first_name: Stijn
+  last_name: Cleeren
+  github: p1nchy
+  twitter: StijnCleeren
+  linkedin: stijn-cleeren-86066731
+  permalink: /author/stijn-cleeren/
+  avatar: stijn-cleeren.jpg
+  title: Software Engineer
+  title2: Competence Leader MINT-Research
+  email: stijn.cleeren@ordina.be
+  bio: 
+gertjan_vanthienen:
+  first_name: Gertjan
+  last_name: Vanthienen
+  github: gertjanvanthienen
+  twitter: g_vanthienen
+  linkedin: gertjanvanthienen
+  permalink: /author/gertjan-vanthienen/
+  avatar: gertjan-vanthienen.jpg
+  title: Software Engineer
+  title2: Competence Leader Azure
+  email: gertjan.vanthienen@ordina.be
+  bio: 
+stieve_verheyden:
+  first_name: Stieve
+  last_name: Verheyden
+  github: stieve
+  twitter: verheydenstieve
+  linkedin: stieveverheyden
+  permalink: /author/stieve-verheyden/
+  avatar: stieve-verheyden.jpg
+  title: Software Engineer
+  title2: Competence Leader Web
+  email: stieve.verheyden@ordina.be
+  bio: Stieve Verheyden is a Software Engineer and competence leader at Ordina Belgium. Stieve is passionate about everything related to .NET and web development. He loves the fact that there is always something new to learn. Javascript, Typescript, Angular and ASP.NET Core are just a few things that excite him the most.
+kevin_bosteels:
+  first_name: Kevin
+  last_name: Bosteels
+  github: bosken85
+  twitter: kevinbosteels
+  linkedin: kevinbosteels
+  permalink: /author/kevin_bosteels/
+  avatar: kevin-bosteels.jpg
+  title: Software Engineer
+  title2: Competence Leader Architecture
+  email: kevin.bosteels@ordina.be
+  bio: Kevin Bosteels is a Software Engineer and competence leader at Ordina Belgium. He is full-stack developer with roots in both frond and back-end technologies. He likes playing with technologies and looking for new ways to integrate them in enterprise applications. His main domain lies in the .Net stack but is constantly looking for the right tools for specific tasks.
