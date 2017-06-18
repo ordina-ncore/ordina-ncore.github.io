@@ -83,12 +83,15 @@ A blockchain is a chain of blocks. The current block takes the hash of the previ
 {% include image.html img="/img/blockchain/blockchain.png" %}
 
 # Distributed
+If you had full control over the Blockchain it would only be a matter of time until you had altered an entry and cheated the system. Therefore the blockchain is also distributed this means that there must be an agreement for every new entry. When you would try to modify something from the past the chain would be broken. 
 {% include image.html img="/img/blockchain/distributed.png" %}
 
 # Tokens
+Until now we just had a data input area, without it being really useful. Let us introduce something that makes it interesting. Tokens are comparable with transferring money. At first we see the amount of dollars to be transformed and from who to whom. 
 {% include image.html img="/img/blockchain/tokens.png" %}
 
 # Coinbase
+But there is still a problem at this stage. How do we start transferring money if nobody has money in his account. 
 {% include image.html img="/img/blockchain/coinbase.png" %}
 
 # Bitcoin
