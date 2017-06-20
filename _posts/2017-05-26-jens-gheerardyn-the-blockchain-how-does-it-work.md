@@ -9,7 +9,7 @@ comments: true
 ---
 
 
-> You have probably heard about the Blockchain, but how does it actually work on a technical bases?
+> You have probably heard about the Blockchain, but how does it actually work on a technical basis?
 
 # Topics
 Step by step we will dive a little deeper into how the blockchain works:
