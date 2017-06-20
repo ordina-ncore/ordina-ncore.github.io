@@ -31,7 +31,7 @@ A blockchain exists out of multiple machines, called nodes. All the nodes store 
 Transactions are bundled and concantenated into a block before being distributed to all the nodes.
 There is no central authority that is responsible for the transactions, all the nodes combined decide if they append it to the existing chain of blocks.
 
-The stored data is permanent or immutable, meaning only data can be added and if some mistake was made it cannot be undone. If you did made a mistake your only option is to compensate for it. A distributed database means that we do not have control over the data, we need to prevent others from tampering with the data. Especially when we read that it is a ledger for digital transactions, the data needs to be integer. 
+The stored data is permanent or immutable, meaning data can only be added and if some mistake was made it cannot be undone. If you did made a mistake your only option is to compensate for it. A distributed database means that we do not have control over the data, we need to prevent others from tampering with the data. Especially when we read that it is a ledger for digital transactions, the data needs to be integer. 
 
 Apart from that the blockchain needs protection from repudiation attacks. A repudiation attack is the possibility for a person to deny that they performed a specific action.
 
