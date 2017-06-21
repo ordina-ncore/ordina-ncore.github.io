@@ -45,7 +45,7 @@ Now let us go dive into some more detail.
 </div>
 <div class="1u">&nbsp;</div>
 <div class="7u">
-In order to prevent tampering with the data we need some sort of validation. A hash or more specific a cryptographic hash function, such a function maps data from an arbitrary size to a fixed size. Such a function is also called a non-ivertible or a one-way function. The input will always generate the same output but you cannot figure out the input from the output, hence the term one-way. 
+In order to prevent tampering with the data we need some sort of validation. A hash or more specific a cryptographic hash function maps data from an arbitrary size to a fixed size. Such a function is also called a non-ivertible or a one-way function. The input will always generate the same output but you cannot figure out the input from the output, hence the term one-way. 
 
 Sha256 is a hashing algorithm with an output of 256 bits or 64 hexadecimal characters. A Hexadecimal character uses 4 bits per character: 256/4=64
 
@@ -80,12 +80,12 @@ The moment we changed the data to NCore the hash violated the constraint and bec
 {% include image.html img="/img/blockchain/block-ncore-mined.png" %}
 
 # Blockchain
-A blockchain is a chain of blocks. The current block takes the hash of the previous block. The chain breaks when you to modify a value, this is exactly why they describe the blockchain as immutable. It is append only.
+A blockchain is a chain of blocks. The current block takes the hash of the previous block. The chain breaks when you modify a value, this is exactly why they describe the blockchain as immutable. It is append only.
 
 {% include image.html img="/img/blockchain/blockchain.png" %}
 
 # Distributed
-If you had full control over the Blockchain it would only be a matter of time until you had altered an entry and cheated the system. Therefore the blockchain is also distributed this means that there must be an agreement for every new entry. When you would try to modify something from the past the chain would be broken. 
+If you had full control over the Blockchain it would only be a matter of time until you had altered an entry and cheated the system. Therefore the blockchain is also distributed; this means that there must be an agreement for every new entry. When you would try to modify something from the past the chain would be broken. 
 {% include image.html img="/img/blockchain/distributed.png" %}
 
 # Tokens
