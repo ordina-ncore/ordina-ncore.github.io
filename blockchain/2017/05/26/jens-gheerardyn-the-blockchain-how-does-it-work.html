@@ -197,7 +197,7 @@ There is no central authority that is responsible for the transactions, all the 
 </div>
 <div class="1u">&nbsp;</div>
 <div class="7u">
-In order to prevent tampering with the data we need some sort of validation. A hash or more specific a cryptographic hash function, such a function maps data from an arbitrary size to a fixed size. Such a function is also called a non-ivertible or a one-way function. The input will always generate the same output but you cannot figure out the input from the output, hence the term one-way. 
+In order to prevent tampering with the data we need some sort of validation. A hash or more specific a cryptographic hash function maps data from an arbitrary size to a fixed size. Such a function is also called a non-ivertible or a one-way function. The input will always generate the same output but you cannot figure out the input from the output, hence the term one-way. 
 
 Sha256 is a hashing algorithm with an output of 256 bits or 64 hexadecimal characters. A Hexadecimal character uses 4 bits per character: 256/4=64
 
@@ -255,7 +255,7 @@ The hash has always the same length no matter the input.
 </figure>
 
 <h1 id="blockchain">Blockchain</h1>
-<p>A blockchain is a chain of blocks. The current block takes the hash of the previous block. The chain breaks when you to modify a value, this is exactly why they describe the blockchain as immutable. It is append only.</p>
+<p>A blockchain is a chain of blocks. The current block takes the hash of the previous block. The chain breaks when you modify a value, this is exactly why they describe the blockchain as immutable. It is append only.</p>
 
 <figure>
     <img class="center-block image fit" src="/img/blockchain/blockchain.png" />
@@ -263,7 +263,7 @@ The hash has always the same length no matter the input.
 </figure>
 
 <h1 id="distributed">Distributed</h1>
-<p>If you had full control over the Blockchain it would only be a matter of time until you had altered an entry and cheated the system. Therefore the blockchain is also distributed this means that there must be an agreement for every new entry. When you would try to modify something from the past the chain would be broken.</p>
+<p>If you had full control over the Blockchain it would only be a matter of time until you had altered an entry and cheated the system. Therefore the blockchain is also distributed; this means that there must be an agreement for every new entry. When you would try to modify something from the past the chain would be broken.</p>
 
 <figure>
     <img class="center-block image fit" src="/img/blockchain/distributed.png" />
