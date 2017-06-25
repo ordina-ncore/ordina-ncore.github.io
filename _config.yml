@@ -11,7 +11,7 @@ url: "https://ordina-ncore.github.io" # the base hostname & protocol for your si
 twitter_username: lifeatordinabe
 github_username:  ordina-ncore
 facebook: lifeatordinabe
-gems: [jekyll-paginate, jekyll-feed]
+plugins: [jekyll-paginate, jekyll-feed]
 # Build settings
 markdown: kramdown
 
