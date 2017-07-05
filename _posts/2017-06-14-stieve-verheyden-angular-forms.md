@@ -39,7 +39,7 @@ export AppModule {}
 ### Creating the form
 We first need to create a component. This can be done quickly by using the angular-cli.
 {% highlight shell %}
-    ng generate component template-driven
+    ng generate component order-form
 {% endhighlight %}
 
 Now we can start creating our form layout in the component html file.
@@ -90,7 +90,7 @@ Template-driven forms leverage the HTML validation attributes for validation. By
                name="firstName"
                #firstNameVar="ngModel"/>
         <span style="color: red" [hidden]="firstNameVar.valid || !firstNameVar.touched">
-            <small *ngIf="!firstNameVar.errors.required">{{'Please enter your first name'}}</small>
+            <small *ngIf="firstNameVar.errors && firstNameVar.errors.required">{{'Please enter your first name'}}</small>
         </span>
     ...
 {% endhighlight %}
