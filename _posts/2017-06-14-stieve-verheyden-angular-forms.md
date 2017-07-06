@@ -18,7 +18,7 @@ Angular provides two ways to work with forms: ***template-driven*** forms and **
 Let’s start by using template-driven forms and see how far we get.
 
 # Template-driven forms
-Let's start by creating our order form with the template-driven approach.
+We will first focus on the template-driven approach. The first step we need to take is enabling the Angular Forms API.
 
 ### Import FormsModule
 In order to use Angular forms we need to import Angular’s `FormsModule`, who can be found in the `@angular/forms` module, into our application module *(AppModule.ts)*.
@@ -52,7 +52,7 @@ Now we can start creating our form layout in the component html file.
 
 When Angular finds a form it will automatically been seen as a `ngForm` directive. This is because the `ngForm` directive has a selector matching `<form>`. The `ngForm` directive tells Angular to create a `FormGroup` and bind it to the form. The `FormGroup` will track the state and values of the form.
 
-Our form is using the `ngSubmit` directive, this is a best practice. `ngSubmit` ensures that the form does not submit, when the handler code throws and causes an actual http post request.
+Our form is using the `ngSubmit` directive. `ngSubmit` ensures that the form does not submit, when the handler code throws and causes an actual http post request.
 
 ### Template-reference variables
 Now that we have a form and a submit button I would like to disable the submit button when the form is not valid, by checking the valid property of the `ngForm` instance. To access the `ngForm` instance we need to export the reference and import it into a **template-reference variable**. A Template-reference variable is *prefixed by a **#***. Here we export the `ngForm` into a the `#orderForm` template-reference variable. Now we can disable the submit button when our `ngForm` is not valid.
@@ -94,13 +94,13 @@ Template-driven forms leverage the HTML validation attributes for validation. By
         </span>
     ...
 {% endhighlight %}
-Angular provides us a subset of built-in validators out of the box. We can apply them either declaratively as directives on elements in our DOM. Next to this Angular allows us to easily extend with custom validators, but this is outside the scope of this post.
+Angular provides us a subset of built-in validators out of the box. We can apply them either declaratively as directives on elements in our DOM.
 
 # Reactive forms
 Let’s see how much effort we need to refactor our template-driven form into a reactive or model-driven one. When taking the reactive form approach we will define the form-model by creating the `FormGroup` and the form instance our self, in our component-class. After this we’ll bind the template to our form model. This means that the form won’t be modifying our data model directly.
 
 ### Import ReactiveFormsModule
-First thing we need to do is loading the correct module. To be able to use Reactive form directives we need to import Angular’s `ReactiveFormsModule`, who can also be found in the `@angular/forms` module, into our application module (AppModule.ts).
+First thing we need to do is loading the correct module. To be able to use Reactive form directives we need to import Angular’s `ReactiveFormsModule`, which can also be found in the `@angular/forms` module, into our application module (AppModule.ts).
 
 {% highlight coffeescript %}
 import { NgModule } from '@angular/core';
