@@ -102,7 +102,6 @@ Let’s see how much effort we need to refactor our template-driven form into a 
 ### Import ReactiveFormsModule
 First thing we need to do is loading the correct module. To be able to use Reactive form directives we need to import Angular’s `ReactiveFormsModule`, whichUpda
 export AppModule {}
-{% endhighlight %}
 
 ### Refactor the component class
 Let’s start refactoring. In the template-driven part we saw that Angular, behind the scenes, creates a `FormGroup` for each form it encounters. We’ll start by creating our form model by initializing a `FormGroup`. The best place to initialize the form is in the `ngOnInit()` method, who is one of the lifecycle hook methods that is called shortly after the creation of our component.
