@@ -10,7 +10,7 @@ comments: false
 
 > Like every year Ordina Belgium gives a lot of their consultants the opportunity to attend Techorama. This year Ordina offered nachos at their booth for all the hungry developers ;). After attending a session about Angular Forms, given by Deborah Kurata, I was thinking about how we could improve our nachos service next year. Maybe we should allow people to order nachos in advance, by using a web-application based on Angular forms.
 
-Before we start building our application it might be interesting to know the different approaches that can be used while working with Angular Forms.
+Most of the current web applications, contain at least 1 form. A large category of frontend applications are very form-intensive, especially in the case of enterprise development. Many of these applications are basically just huge forms. Before we start building our order-application it might be interesting to know the different approaches that can be used while working with Angular Forms.
 
 # Different approaches
 Angular provides two ways to work with forms: ***template-driven*** forms and ***reactive*** forms. With *template-driven* forms, the default way to work with forms in Angular, template directives are used to build an internal representation of the form. With *reactive* forms, we build our own representation of a form in the component class.
@@ -100,18 +100,7 @@ Angular provides us a subset of built-in validators out of the box. We can apply
 Let’s see how much effort we need to refactor our template-driven form into a reactive or model-driven one. When taking the reactive form approach we will define the form-model by creating the `FormGroup` and the form instance our self, in our component-class. After this we’ll bind the template to our form model. This means that the form won’t be modifying our data model directly.
 
 ### Import ReactiveFormsModule
-First thing we need to do is loading the correct module. To be able to use Reactive form directives we need to import Angular’s `ReactiveFormsModule`, which can also be found in the `@angular/forms` module, into our application module (AppModule.ts).
-
-{% highlight coffeescript %}
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
-
-@NgModule({
-  imports: [BrowserModule, ReactiveFormsModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent]
-})
+First thing we need to do is loading the correct module. To be able to use Reactive form directives we need to import Angular’s `ReactiveFormsModule`, whichUpda
 export AppModule {}
 {% endhighlight %}
 
