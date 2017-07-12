@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html>
+<head>
+        <meta charset="utf-8">
+    <meta name="description" content="We build innovative solutions with .NET and JavaScript. To support this mission, we have several Competence Centers. From within those Competence Centers, we provide coaching to the employee and expert advice towards our customer. In order to keep in sync with the latest technologies and the latest trends, we frequently visit conferences around the globe.
+">
+    <meta name="keywords" content="Ordina,Microsoft,NCore,Blog,.NET,JavaScript,TypeScript,Angular,DevOps">
+    <meta name="author" content="Ordina Belgium">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+        
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Angular forms @ Techorama 2017 - Stieve Verheyden">
+        <meta name="twitter:description" content="Ordina NCore Tech Blog">
+        <meta name="twitter:image" content="http://ordina-ncore.github.io/img/Techorama2017/techorama-angular-banner.png"/>
+
+        <!-- Facebook Open Graph -->
+        <meta property="og:url" content="http://ordina-ncore.github.io/conferences/2017/06/14/stieve-verheyden-angular-forms.html"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Angular forms @ Techorama 2017 - Stieve Verheyden"/>
+        <meta property="og:description" content="Ordina NCore Tech Blog"/>
+        <meta property="og:image" content="http://ordina-ncore.github.io/img/Techorama2017/techorama-angular-banner.png"/>
+    
+
+    
+    <title>Angular forms @ Techorama 2017 - Stieve Verheyden &mdash; Ordina NCore Tech Blog</title>
+    
+
+        <!-- Styles -->
+    <!-- Font awesome CSS -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Magnific Popup -->
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <!-- Owl carousel -->
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+
+    <!-- CSS for this page -->
+
+    <!-- Syntax highlighting -->
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+    <!--[if lte IE 8]>
+    <script src="/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="/css/main.css"/>
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/ie8.css"/><![endif]-->
+
+    <!-- Custom CSS. Type your CSS code in custom.css file -->
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="#">
+
+    <script src="https://use.typekit.net/gzh0mbm.js"></script>
+    <script>
+        try {
+            Typekit.load({async: true});
+        } catch (e) {
+        }
+    </script>
+</head>
+
+<body>
+<div id="header-image"></div>
+
+
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+        <!-- Header -->
+    <header id="header">
+        <h1>
+            <a href="/">
+                NCore Tech Blog
+            </a>
+        </h1>
+
+        <nav>
+            <a href="#menu">Menu</a>
+            <form action="/search/" method="get" class="header-search search-form">
+                <input type="text" id="search-box-header" name="query" placeholder="Search &hellip;">
+            </form>
+        </nav>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+        <div class="inner">
+            <h2>Menu</h2>
+            <ul class="links">
+                <li class="menu-item"><a href="/">Home</a></li>
+                <li class="menu-item"><a href="/about">About Us</a></li>
+                <li class="menu-item"><a href="/jobs">Jobs</a></li>
+                <li class="menu-item"><a href="/search">Search</a></li>
+                <li class="menu-item"><a href="/contact">Contact Us</a></li>
+            </ul>
+            <a href="#" class="close">Close</a>
+        </div>
+    </nav>
+
+    <section id="banner">
+        <header>
+            <div class="inner">
+                
+
+                <h2>Angular forms @ Techorama 2017</h2>
+                
+
+                
+                    Posted Jun 14, 2017
+
+
+    in <a href="/categories/conferences/">Conferences</a>
+
+
+
+    by
+    
+        <a href="/author/stieve-verheyden/">Stieve Verheyden</a>
+        
+    
+
+
+
+    <br/>
+    <i class="fa fa-tags"></i>
+    
+        <a href="/tags/techorama/">Techorama</a>, 
+    
+        <a href="/tags/conferences/">conferences</a>, 
+    
+        <a href="/tags/angular/">Angular</a>
+    
+
+                
+
+                
+
+            </div>
+        </header>
+    </section>
+
+    <section id="wrapper">
+        <div class="inner">
+            <section id="one" class="wrapper spotlight style1 post-body">
+    <div class="inner" style="text-align: left;">
+        <div class="content">
+            <blockquote>
+  <p>Like every year Ordina Belgium gives a lot of their consultants the opportunity to attend Techorama. This year Ordina offered nachos at their booth for all the hungry developers ;). After attending a session about Angular Forms, given by Deborah Kurata, I was thinking about how we could improve our nachos service next year. Maybe we should allow people to order nachos in advance, by using a web-application based on Angular forms.</p>
+</blockquote>
+
+<p>Most of the current web applications, contain at least 1 form. A large category of frontend applications are very form-intensive, especially in the case of enterprise development. Many of these applications are basically just huge forms. Before we start building our order-application it might be interesting to know the different approaches that can be used while working with Angular Forms.</p>
+
+<h1 id="different-approaches">Different approaches</h1>
+<p>Angular provides two ways to work with forms: <strong><em>template-driven</em></strong> forms and <strong><em>reactive</em></strong> forms. With <em>template-driven</em> forms, the default way to work with forms in Angular, template directives are used to build an internal representation of the form. With <em>reactive</em> forms, we build our own representation of a form in the component class.</p>
+
+<p>Let’s start by using template-driven forms and see how far we get.</p>
+
+<h1 id="template-driven-forms">Template-driven forms</h1>
+<p>We will first focus on the template-driven approach. The first step we need to take is enabling the Angular Forms API.</p>
+
+<h3 id="import-formsmodule">Import FormsModule</h3>
+<p>In order to use Angular forms we need to import Angular’s <code class="highlighter-rouge">FormsModule</code>, who can be found in the <code class="highlighter-rouge">@angular/forms</code> module, into our application module <em>(AppModule.ts)</em>.</p>
+
+<figure class="highlight"><pre><code class="language-coffeescript" data-lang="coffeescript"><span class="nx">import</span> <span class="p">{</span> <span class="nx">NgModule</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'@angular/core'</span><span class="p">;</span>
+<span class="nx">import</span> <span class="p">{</span> <span class="nx">BrowserModule</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'@angular/platform-browser'</span><span class="p">;</span>
+<span class="nx">import</span> <span class="p">{</span> <span class="nx">FormsModule</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'@angular/forms'</span><span class="p">;</span>
+
+<span class="vi">@</span><span class="na">NgModule</span><span class="p">({</span>
+  <span class="na">imports</span><span class="o">:</span> <span class="p">[</span><span class="nx">BrowserModule</span><span class="p">,</span> <span class="nx">FormsModule</span><span class="p">],</span>
+  <span class="na">declarations</span><span class="o">:</span> <span class="p">[</span><span class="nx">AppComponent</span><span class="p">],</span>
+  <span class="na">bootstrap</span><span class="o">:</span> <span class="p">[</span><span class="nx">AppComponent</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="nx">export</span> <span class="nx">AppModule</span> <span class="p">{}</span></code></pre></figure>
+
+<h3 id="creating-the-form">Creating the form</h3>
+<p>We first need to create a component. This can be done quickly by using the angular-cli.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    ng generate component order-form</code></pre></figure>
+
+<p>Now we can start creating our form layout in the component html file.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="nt">&lt;form</span> <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)="</span><span class="na">sendOrder</span><span class="err">()"</span><span class="nt">&gt;</span> 
+        ...
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Order<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+<p>When Angular finds a form it will automatically been seen as a <code class="highlighter-rouge">ngForm</code> directive. This is because the <code class="highlighter-rouge">ngForm</code> directive has a selector matching <code class="highlighter-rouge">&lt;form&gt;</code>. The <code class="highlighter-rouge">ngForm</code> directive tells Angular to create a <code class="highlighter-rouge">FormGroup</code> and bind it to the form. The <code class="highlighter-rouge">FormGroup</code> will track the state and values of the form.</p>
+
+<p>Our form is using the <code class="highlighter-rouge">ngSubmit</code> directive. <code class="highlighter-rouge">ngSubmit</code> ensures that the form does not submit, when the handler code throws and causes an actual http post request.</p>
+
+<h3 id="template-reference-variables">Template-reference variables</h3>
+<p>Now that we have a form and a submit button I would like to disable the submit button when the form is not valid, by checking the valid property of the <code class="highlighter-rouge">ngForm</code> instance. To access the <code class="highlighter-rouge">ngForm</code> instance we need to export the reference and import it into a <strong>template-reference variable</strong>. A Template-reference variable is <em>prefixed by a <strong>#</strong></em>. Here we export the <code class="highlighter-rouge">ngForm</code> into a the <code class="highlighter-rouge">#orderForm</code> template-reference variable. Now we can disable the submit button when our <code class="highlighter-rouge">ngForm</code> is not valid.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="nt">&lt;form</span> <span class="err">#</span><span class="na">orderForm=</span><span class="s">"ngForm"</span>
+          <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)="</span><span class="na">sendOrder</span><span class="err">(</span><span class="na">orderForm</span><span class="err">)"</span><span class="nt">&gt;</span> 
+        ...
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="err">[</span><span class="na">disabled</span><span class="err">]="!</span><span class="na">orderForm</span><span class="err">.</span><span class="na">valid</span><span class="err">"</span><span class="nt">&gt;</span>Order<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+<h3 id="adding-input-elements">Adding input elements</h3>
+<p>A form does not make a lot of sense when it does not contain any input fields. So this will be our next step.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    ...
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"inputFirstName"</span>
+               <span class="na">type=</span><span class="s">"text"</span>
+               <span class="na">required</span>
+               <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]="</span><span class="na">order</span><span class="err">.</span><span class="na">firstName</span><span class="err">"</span>
+               <span class="na">name=</span><span class="s">"firstName"</span>
+               <span class="err">#</span><span class="na">firstNameVar=</span><span class="s">"ngModel"</span><span class="nt">/&gt;</span>        
+    ...</code></pre></figure>
+
+<p>The <code class="highlighter-rouge">ngModel</code> directive will setup two-way binding between the <em>component</em>-class property and the view. Angular automatically creates a <code class="highlighter-rouge">FormControl</code> and adds it to the form model, for each <em>input</em>-element with a <code class="highlighter-rouge">ngModel</code> directive. The <code class="highlighter-rouge">name</code> attribute is <strong>required</strong>, without it Angular would not know how to name the <code class="highlighter-rouge">FormControl</code> within the form-model.
+By using a template-reference variable <code class="highlighter-rouge">#firstNameVar</code> we can access the FormControl on another location, within the current template.</p>
+
+<h3 id="validation">Validation</h3>
+<p>Template-driven forms leverage the HTML validation attributes for validation. By using <code class="highlighter-rouge">*ngIf</code> the <code class="highlighter-rouge">errors</code> property, of an input element, can be checked and an appropriate error message can be displayed.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    ...
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"inputFirstName"</span>
+               <span class="na">type=</span><span class="s">"text"</span>
+               <span class="na">required</span>
+               <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]="</span><span class="na">order</span><span class="err">.</span><span class="na">firstName</span><span class="err">"</span>
+               <span class="na">name=</span><span class="s">"firstName"</span>
+               <span class="err">#</span><span class="na">firstNameVar=</span><span class="s">"ngModel"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"color: red"</span> <span class="err">[</span><span class="na">hidden</span><span class="err">]="</span><span class="na">firstNameVar</span><span class="err">.</span><span class="na">valid</span> <span class="err">||</span> <span class="err">!</span><span class="na">firstNameVar</span><span class="err">.</span><span class="na">touched</span><span class="err">"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;small</span> <span class="err">*</span><span class="na">ngIf=</span><span class="s">"firstNameVar.errors &amp;&amp; firstNameVar.errors.required"</span><span class="nt">&gt;</span>Please enter your first name<span class="nt">&lt;/small&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+    ...</code></pre></figure>
+
+<p>Angular provides us a subset of built-in validators out of the box. We can apply them either declaratively as directives on elements in our DOM.</p>
+
+<h1 id="reactive-forms">Reactive forms</h1>
+<p>Let’s see how much effort we need to refactor our template-driven form into a reactive or model-driven one. When taking the reactive form approach we will define the form-model by creating the <code class="highlighter-rouge">FormGroup</code> and the form instance our self, in our component-class. After this we’ll bind the template to our form model. This means that the form won’t be modifying our data model directly.</p>
+
+<h3 id="import-reactiveformsmodule">Import ReactiveFormsModule</h3>
+<p>First thing we need to do is loading the correct module. To be able to use Reactive form directives we need to import Angular’s <code class="highlighter-rouge">ReactiveFormsModule</code>, whichUpda
+export AppModule {}</p>
+
+<h3 id="refactor-the-component-class">Refactor the component class</h3>
+<p>Let’s start refactoring. In the template-driven part we saw that Angular, behind the scenes, creates a <code class="highlighter-rouge">FormGroup</code> for each form it encounters. We’ll start by creating our form model by initializing a <code class="highlighter-rouge">FormGroup</code>. The best place to initialize the form is in the <code class="highlighter-rouge">ngOnInit()</code> method, who is one of the lifecycle hook methods that is called shortly after the creation of our component.</p>
+
+<figure class="highlight"><pre><code class="language-coffeescript" data-lang="coffeescript"><span class="nx">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">OnInit</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'@angular/core'</span><span class="p">;</span>
+<span class="nx">import</span> <span class="p">{</span> <span class="nx">FormGroup</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'@angular/forms'</span><span class="p">;</span>
+<span class="nx">import</span> <span class="p">{</span> <span class="nx">Order</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'../models/order'</span><span class="p">;</span>
+
+<span class="vi">@</span><span class="na">Component</span><span class="p">({</span>
+  <span class="na">selector</span><span class="o">:</span> <span class="s">'app-reactive'</span><span class="p">,</span>
+  <span class="p">...</span>
+<span class="p">})</span>
+<span class="nx">export</span> <span class="k">class</span> <span class="nx">ReactiveComponent</span> <span class="nx">implements</span> <span class="nx">OnInit</span> <span class="p">{</span>
+  <span class="na">orderForm</span><span class="o">:</span> <span class="nx">FormGroup</span><span class="p">;</span>
+  <span class="na">order</span><span class="o">:</span> <span class="nx">Order</span><span class="p">;</span>
+  <span class="p">...</span>
+  <span class="nx">ngOnInit</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="na">orderForm</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FormGroup</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="p">...</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Great we now have a form, but it’s an empty one. So the next step will be to add a <code class="highlighter-rouge">FormControl</code> for each input element.</p>
+
+<figure class="highlight"><pre><code class="language-coffeescript" data-lang="coffeescript"><span class="nx">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">OnInit</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'@angular/core'</span><span class="p">;</span>
+<span class="nx">import</span> <span class="p">{</span> <span class="nx">FormGroup</span><span class="p">,</span> <span class="nx">FormControl</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'@angular/forms'</span><span class="p">;</span>
+<span class="nx">import</span> <span class="p">{</span> <span class="nx">Order</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'../models/order'</span><span class="p">;</span>
+
+<span class="vi">@</span><span class="na">Component</span><span class="p">({</span>
+  <span class="na">selector</span><span class="o">:</span> <span class="s">'app-reactive'</span><span class="p">,</span>
+  <span class="p">...</span>
+<span class="p">})</span>
+<span class="nx">export</span> <span class="k">class</span> <span class="nx">ReactiveComponent</span> <span class="nx">implements</span> <span class="nx">OnInit</span> <span class="p">{</span>
+  <span class="na">orderForm</span><span class="o">:</span> <span class="nx">FormGroup</span><span class="p">;</span>
+  <span class="na">order</span><span class="o">:</span> <span class="nx">Order</span><span class="p">;</span>
+  <span class="p">...</span>
+  <span class="nx">ngOnInit</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="na">orderForm</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FormGroup</span><span class="p">({</span>
+      <span class="na">firstName</span><span class="o">:</span> <span class="k">new</span> <span class="nx">FormControl</span><span class="p">(</span><span class="s">''</span><span class="p">),</span>
+      <span class="na">lastName</span><span class="o">:</span> <span class="k">new</span> <span class="nx">FormControl</span><span class="p">(</span><span class="s">''</span><span class="p">),</span>
+      <span class="na">mySauce</span><span class="o">:</span> <span class="k">new</span> <span class="nx">FormControl</span><span class="p">(</span><span class="s">'chili'</span><span class="p">)</span>
+    <span class="p">});</span>
+  <span class="p">...</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>By passing a value to the first parameter, of the <code class="highlighter-rouge">FormControl</code> constructor, we can set default values.</p>
+
+<h3 id="linking-to-the-template">Linking to the template</h3>
+<p>After defining our form and its controls, in the component class, we need to link it with our template.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="nt">&lt;form</span> <span class="err">[</span><span class="na">formGroup</span><span class="err">]="</span><span class="na">orderForm</span><span class="err">"</span>
+          <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)="</span><span class="na">sendOrder</span><span class="err">()"</span><span class="nt">&gt;</span>
+    ...
+    <span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+<p>This can be done by using the <code class="highlighter-rouge">formGroup</code> directive, who will connect our model with the form template.</p>
+
+<p>The next thing we need to do is connect all the form controls to the model.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="nt">&lt;form</span> <span class="err">[</span><span class="na">formGroup</span><span class="err">]="</span><span class="na">orderForm</span><span class="err">"</span>
+          <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)="</span><span class="na">sendOrder</span><span class="err">()"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputFirstName"</span><span class="nt">&gt;</span>First Name:<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"inputFirstName"</span>
+                <span class="na">type=</span><span class="s">"text"</span>
+                <span class="na">required</span>
+                <span class="na">formControlName=</span><span class="s">"firstName"</span><span class="nt">/&gt;</span>
+    ...
+    <span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+<p>We replaced the combination of an <code class="highlighter-rouge">ngModel</code> and <code class="highlighter-rouge">name</code> attribute, like in template-driven forms, by a single <code class="highlighter-rouge">formControlName</code> directive. The <code class="highlighter-rouge">formControlName</code> directive will make the association between the form controls and the model.</p>
+
+<h3 id="accessing-the-from-model-properties">Accessing the From Model properties</h3>
+<p>When using template-driven forms we could make usage of template-reference variables to access form objects somewhere else in the template. 
+Reactive forms requires another approach.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="nt">&lt;form</span> <span class="err">[</span><span class="na">formGroup</span><span class="err">]="</span><span class="na">orderForm</span><span class="err">"</span>
+          <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)="</span><span class="na">sendOrder</span><span class="err">()"</span><span class="nt">&gt;</span>
+    
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputFirstName"</span><span class="nt">&gt;</span>First Name:<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"inputFirstName"</span>
+            <span class="na">type=</span><span class="s">"text"</span>
+            <span class="na">required</span>
+            <span class="na">formControlName=</span><span class="s">"firstName"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"color: red"</span> <span class="err">*</span><span class="na">ngIf=</span><span class="s">"(orderForm.get('firstName').touched &amp;&amp; !orderForm.get('firstName').valid)"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;small</span> <span class="err">*</span><span class="na">ngIf=</span><span class="s">"orderForm.get('firstName').errors.required"</span><span class="nt">&gt;</span>Please enter your first name<span class="nt">&lt;/small&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+
+    ...
+    <span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+<p>By using <code class="highlighter-rouge">orderForm.get('firstName')</code> we are requesting the firstName FormControl of our main FormGroup.</p>
+
+<h3 id="validation-1">Validation</h3>
+<p>There are different ways to add validation, when using reactive forms, we can either add them as directives to the template or to the <code class="highlighter-rouge">FormControl</code> instance in our model.
+We will add the validations directly to the <code class="highlighter-rouge">FormControl</code>.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    ...
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputFirstName"</span><span class="nt">&gt;</span>First Name:<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"inputFirstName"</span>
+               <span class="na">type=</span><span class="s">"text"</span>
+               <span class="na">formControlName=</span><span class="s">"firstName"</span><span class="nt">/&gt;</span>
+    ...</code></pre></figure>
+
+<p>First we need to remove the <code class="highlighter-rouge">required</code> attribute from our template.</p>
+
+<figure class="highlight"><pre><code class="language-coffeescript" data-lang="coffeescript"><span class="nx">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">OnInit</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'@angular/core'</span><span class="p">;</span>
+<span class="nx">import</span> <span class="p">{</span> <span class="nx">FormGroup</span><span class="p">,</span> <span class="nx">FormControl</span><span class="p">,</span> <span class="nx">Validators</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'@angular/forms'</span><span class="p">;</span>
+<span class="nx">import</span> <span class="p">{</span> <span class="nx">Order</span> <span class="p">}</span> <span class="nx">from</span> <span class="s">'../models/order'</span><span class="p">;</span>
+
+<span class="vi">@</span><span class="na">Component</span><span class="p">({</span>
+  <span class="na">selector</span><span class="o">:</span> <span class="s">'app-reactive'</span><span class="p">,</span>
+  <span class="p">...</span>
+<span class="p">})</span>
+<span class="nx">export</span> <span class="k">class</span> <span class="nx">ReactiveComponent</span> <span class="nx">implements</span> <span class="nx">OnInit</span> <span class="p">{</span>
+  <span class="na">orderForm</span><span class="o">:</span> <span class="nx">FormGroup</span><span class="p">;</span>
+  <span class="na">order</span><span class="o">:</span> <span class="nx">Order</span><span class="p">;</span>
+  <span class="p">...</span>
+  <span class="nx">ngOnInit</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="na">orderForm</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FormGroup</span><span class="p">({</span>
+      <span class="na">firstName</span><span class="o">:</span> <span class="k">new</span> <span class="nx">FormControl</span><span class="p">(</span><span class="s">''</span><span class="p">,</span> <span class="nx">Validators</span><span class="p">.</span><span class="na">required</span><span class="p">),</span>
+      <span class="na">lastName</span><span class="o">:</span> <span class="k">new</span> <span class="nx">FormControl</span><span class="p">(</span><span class="s">''</span><span class="p">,</span> <span class="nx">Validators</span><span class="p">.</span><span class="na">required</span><span class="p">),</span>
+      <span class="na">mySauce</span><span class="o">:</span> <span class="k">new</span> <span class="nx">FormControl</span><span class="p">(</span><span class="s">'chili'</span><span class="p">)</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+  <span class="p">...</span></code></pre></figure>
+
+<p>When more than one validator is needed an array of validators can be passed.</p>
+
+<h1 id="summary">Summary</h1>
+<p>This was a very quick intro to Angular Forms and it’s only a tip of the iceberg. We can do a lot more with forms but the intention was to give an overview about basic funtionality that we use day in and day out when working with forms.</p>
+
+<p>Here is a small overview of both ways:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Template-driven</th>
+      <th>Reactive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Easy to use</td>
+      <td>Flexibel</td>
+    </tr>
+    <tr>
+      <td>Similar to AngularJs</td>
+      <td>More code</td>
+    </tr>
+    <tr>
+      <td>2-way data binding</td>
+      <td>Immutable data model</td>
+    </tr>
+    <tr>
+      <td>Automatic tracking of state</td>
+      <td>Easier to test, because everything is in code</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The code, used during this blog post, can be found on <a href="https://github.com/Stieve/example-angular-forms">github</a>.</p>
+
+        </div>
+    </div>
+    <div class="share-page" >
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://ordina-ncore.github.io/conferences/2017/06/14/stieve-verheyden-angular-forms.html&title=Angular forms @ Techorama 2017&source=https://ordina-ncore.github.io" rel="nofollow" target="_blank" title="Share on LinkedIN">
+            <img src="/img/social-media/LinkedIn.png"
+                 alt="Share on LinkedIn" />
+        </a>
+        <a href="https://twitter.com/intent/tweet?text=Angular forms @ Techorama 2017&url=https://ordina-ncore.github.io/conferences/2017/06/14/stieve-verheyden-angular-forms.html&via=lifeatordinabe&related=lifeatordinabe" rel="nofollow" target="_blank" title="Share on Twitter">
+            <img src="/img/social-media/Twitter.png"
+                 alt="Share on Twitter" />
+        </a>
+        <a href="https://facebook.com/sharer.php?u=https://ordina-ncore.github.io/conferences/2017/06/14/stieve-verheyden-angular-forms.html" rel="nofollow" target="_blank" title="Share on Facebook">
+            <img src="/img/social-media/Facebook.png"
+                 alt="Share on Facebook" />
+        </a>
+    </div>
+</section>
+
+
+<section id="two" class="wrapper alt spotlight style2">
+    
+    <div class="inner">
+        <a href="/author/stieve-verheyden/" class="image spotlight-image">
+            <img src="/img/author/stieve-verheyden.jpg"
+                 alt="" class="p-image"/>
+        </a>
+
+        <div class="content">
+            
+            <p><p>Stieve Verheyden is a Software Engineer and competence leader at Ordina Belgium. Stieve is passionate about everything related to .NET and web development. He loves the fact that there is always something new to learn. Javascript, Typescript, Angular and ASP.NET Core are just a few things that excite him the most.</p>
+</p>
+            
+        </div>
+    </div>
+    
+</section>
+
+
+
+        </div>
+    </section>
+</div>
+
+<div id="over"></div>
+
+<footer>
+    <div class="contact">
+        <div class="address">
+            <div class="icon"><i class="fa fa-fw fa-home"></i></div>
+            <div class="text">Ordina Belgium<br/>Blarenberglaan 3B,<br/>2800 Mechelen, Belgium</div>
+        </div>
+        <div class="phone">
+            <div class="icon"><i class="fa fa-fw fa-phone"></i></div>
+            <div class="text"><a href="tel:003215295858">+32 15 29 58 58</a></div>
+        </div>
+        <div class="email">
+            <div class="icon"><i class="fa fa-fw fa-envelope-o"></i></div>
+            <div class="text"><a href="mailto:jorgen.jacob@ordina.be ">jorgen.jacob@ordina.be</a></div>
+        </div>
+    </div>
+    <ul class="social">
+        <li>
+            <a href="https://twitter.com/lifeatordinabe" target="_blank">
+                <i class="fa fa-fw fa-twitter"></i><span>Twitter</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/lifeatordinabe" target="_blank">
+                <i class=" fa fa-fw fa-facebook"></i><span>Facebook</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/company/ordina-belgium" target="_blank">
+                <i class=" fa fa-fw fa-linkedin"></i><span>LinkedIn</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://plus.google.com/113222464071666722451" target="_blank">
+                <i class=" fa fa-fw fa-google-plus"></i><span>Google+</span>
+            </a>
+        </li>
+        <li>
+            <a href="/youtube" target="_blank">
+                <i class=" fa fa-fw fa-youtube"></i><span>YouTube</span>
+            </a>
+        </li>
+        <li>
+            <a href="/github" target="_blank">
+                <i class=" fa fa-fw fa-github"></i><span>GitHub</span>
+            </a>
+        </li>
+        <li>
+            <a href="/feed.xml" target="_blank">
+                <i class=" fa fa-fw fa-rss"></i><span>RSS Feed</span>
+            </a>
+        </li>
+    </ul>
+    <div class="copyright">
+        &copy; 2017 Ordina NCore. All rights reserved.
+        <br /> Disclaimer: Opinions expressed on this blog reflect the writer's views and not the position of Ordina.
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.scrollex.min.js"></script>
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/skel.min.js"></script>
+<script src="/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="/js/ie/respond.min.js"></script><![endif]-->
+
+
+<script>
+    var imageHref = "/img/Techorama2017/techorama-angular-banner.png";
+    $(function () {
+        $('body').addClass('toggle');
+    });
+</script>
+
+
+<script src="/js/main.js"></script>
+    
+<!-- Disqus -->
+
+
+<!-- Google Analytics -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o);
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-102053934-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>
