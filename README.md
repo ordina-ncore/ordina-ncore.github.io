@@ -24,7 +24,7 @@ Execute the following commands:
 ## Add yourself as an author
 - Create a **feature branch**, starting from **source**: feature/author-update-john-doe
 - Add yourself to the **_data/authors.yml** file
-- Add a picture of yourself to the **img** folder !!! (500px x 293px)
+- Add a picture of yourself to the **img** folder
 - **Rebase** your changes onto the **source** branch
 - Create a **pull request**, this will be reviewed and merged by one of the competence leaders
 
@@ -36,7 +36,7 @@ Execute the following commands:
     - layout: post
     - authors: {author(s)}
     - title: {title}
-    - image: {image_path}
+    - image: {image_path} !!! (500px x 293px)
     - tags: {tags}
     - category: {category}
     - comments: true
