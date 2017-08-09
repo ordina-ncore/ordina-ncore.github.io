@@ -25,6 +25,6 @@ And did I mention anything about the food at NDC? Yes, I did actually already in
 So did NDC Oslo live up to the expectations? Yes! Yes, it did! What a great conference! Well organized, good sessions, good mix of topics, great speakers, awesome food, the ‘overflow room’ where you can go to if you can’t choose between multiple sessions (all sessions are streamed live on a large screen and you get an audio device on which you can choose from what session you want the audio),… I truly hope I can go back to NDC next year! (I know you are reading this, Jörgen*)
 *Jörgen: my manager… ;-)
 
-By the way, all the session (or at leat most of them) can be [viewed online](https://www.youtube.com/watch?v=Fuac__g928E&list=PL03Lrmd9CiGewi0lbnahxEpisoP5WZocX). The once that I pointed out in this post are really worthwhile to watch!
+By the way, all the session (or at leat most of them) can be [viewed online](https://www.youtube.com/watch?v=Fuac__g928E&list=PL03Lrmd9CiGewi0lbnahxEpisoP5WZocX). Those that I pointed out in this post are really worthwhile to watch!
 
  
