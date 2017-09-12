@@ -43,6 +43,10 @@
     <!-- Custom CSS. Type your CSS code in custom.css file -->
     <link href="/css/custom.css" rel="stylesheet">
 
+
+    <!-- overlay -->
+    <link href="/css/overlay.css" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="#">
 
@@ -138,23 +142,14 @@
                                     <h2 class="major">Sessions</h2>
                                     <section>
                                         <table>
-                                            <tr>
+                                            <tr id="ln_keynote">
                                                 <td>xx:xx</td>
-                                                <td colspan="2" style="text-align: center" id="ln_keynote">Keynote: Microsoft </td>
+                                                <td colspan="2" style="text-align: center">Keynote: Microsoft </td>
                                             </tr>
                                             <tr>
                                                 <td>xx:xx</td>
-                                                <td>Going Serverless (Gertjan Vanthienen)</td>
-                                                <td>TBC</td>
-                                            </tr>
-                                            <tr>
-                                                <td>xx:xx</td>
-                                                <td colspan="2" style="text-align: center">Break</td>
-                                            </tr>
-                                            <tr>
-                                                <td>xx:xx</td>
-                                                <td>Jumpstarting microservices with Microsoft Service Fabric (Kevin Bosteels)</td>
-                                                <td>Exploring CQRS (Jens Gheerardyn)</td>
+                                                <td id="ln_serverless">Going Serverless (Gertjan Vanthienen)</td>
+                                                <td id="ln_tbc">TBC</td>
                                             </tr>
                                             <tr>
                                                 <td>xx:xx</td>
@@ -162,15 +157,22 @@
                                             </tr>
                                             <tr>
                                                 <td>xx:xx</td>
-                                                <td>Sessie Tom/Michiel</td>
-                                                <td>Reactive programming, taking the red pill (Pieter Nijs)</td>
+                                                <td id="ln_microserv">Jumpstarting microservices with Microsoft Service Fabric (Kevin Bosteels)</td>
+                                                <td id="ln_CQRS">Exploring CQRS (Jens Gheerardyn)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>xx:xx</td>
+                                                <td colspan="2" style="text-align: center">Break</td>
+                                            </tr>
+                                            <tr>
+                                                <td>xx:xx</td>
+                                                <td id="ln_sessie5">Sessie Tom/Michiel</td>
+                                                <td id="ln_reactive">Reactive programming, taking the red pill (Pieter Nijs)</td>
                                             </tr>
                                         </table>
                                     </section>
-
-
-                                    <section id="keynote">
-                                        <article>
+                                    <section id="keynote" class="hidden-overlay">
+                                        <article class="overlay">
                                             <h2>Keynote</h2>
                                             <em>Microsoft</em>
                                             <p>Lorem ipsum dolor sit amet, vis an latine abhorreant. Sint etiam tractatos per cu. Vel choro imperdiet ex. Utamur epicuri maluisset ne est, nominati cotidieque usu ut, in aeque principes quo. Ubique interpretaris
@@ -178,30 +180,60 @@
                                             </p>
                                         </article>
                                     </section>
-                                    <!-- <section class="features">
-                                        <article>
+                                    <section id="serverless" class="hidden-overlay">
+                                        <article class="overlay">
                                             <h2>Going Serverless</h2>
                                             <em>GertJan Vanthienen</em>
                                             <p>What if you could spend all your time building and deploying great apps, and none of your time managing servers? Serverless computing let's you do just that.
                                             </p>
                                         </article>
-                                        <article>
-                                            <h2>Realm, the cool new kid in Xamarin town</h2>
+                                    </section>
+                                    <section id="TBC" class="hidden-overlay">
+                                        <article class="overlay">
+                                            <h2>TBC</h2>
+                                            <em></em>
+                                            <p>To Be Confirmed
+                                            </p>
+                                        </article>
+                                    </section>
+                                    <section id="microservices" class="hidden-overlay">
+                                        <article class="overlay">
+                                            <h2>Jumpstarting microservices with Microsoft Service Fabric</h2>
+                                            <em>Kevin Bosteels</em>
+                                            <p>Microservices is a hot topic for the moment. But you soon realize that this architecture is very complicated. Service fabric is a platform by Microsoft that allows us to implement a microservices architecture
+                                                in a relative easy way. In this lecture we’ll have a first look at Service Fabric and what it can bring to the table.
+                                            </p>
+                                        </article>
+                                    </section>
+                                    <section id="cqrs" class="hidden-overlay">
+                                        <article class="overlay">
+                                            <h2>Exploring CQRS</h2>
+                                            <em>Jens Gheerardyn</em>
+                                            <p>CQRS is not an architecture, it is a simple pattern that enables many opportunities for architecture that may otherwise not exist. Learn how you can take advantage of this simple pattern. Don’t be confused by
+                                                the overload on CQRS architectures.
+                                            </p>
+                                        </article>
+                                    </section>
+                                    <section id="sessieTomMichiel" class="hidden-overlay">
+                                        <article class="overlay">
+                                            <h2>TBC</h2>
+                                            <em></em>
+                                            <p>To be Confirmed
+                                            </p>
+                                        </article>
+                                    </section>
+                                    <section id="reactive" class="hidden-overlay">
+                                        <article class="overlay">
+                                            <h2>Reactive programming, taking the red pill</h2>
                                             <em>Pieter Nijs</em>
-                                            <p>In this session Pieter will show you exactly why Realm is such a hot topic at the moment. He will start of simple with a local data storage example, but will quickly change gears and show you where Realm really
-                                                shines: connecting to a remote Realm Object Server, building a realtime collaboration app that does realtime data synchronisation, creating serverless functions that get triggered when data is pushed to
-                                                the remote data store,… And what about offline capabilities, networking code, conflict resolution,…? Don't you worry about that! After this session you won't believe how easy it is to build these kind of
-                                                complex looking things with Realm in no time! Level: 300 Technologies: Xamarin Forms, Realm
+                                            <p>Chances are high you heard of reactive programming lately. Yes, it is yet another buzz word that goes around. The thing with reactive programming is that it is not that easy to wrap your head around. It takes
+                                                a very different approach to some things that developers have been doing for years. Many people don't fully understand it and that's why they are 'afraid' of reactive programming. In this talk, Pieter will
+                                                give a short overview of what reactive programming is and how we can use it in our cross-platform mobile apps. He will show different aspects of Reactive UI and how to use it in combination with MVVM. </p>
+                                            <p>
+                                                After this session, you should have a basic understanding of reactive programming and how to use it in a Xamarin Forms app.
                                             </p>
                                         </article>
-                                        <article>
-                                            <h2>Microsoft’s vision on mixed reality</h2>
-                                            <em>Stijn Cleeren</em>
-                                            <p>The past few year we’ve seen a grow of interest in virtual and augmented reality with the release of hardware like the oculus rift, HTC vive and the Microsoft HoloLens. And this year Microsoft is investing more
-                                                time in mixed reality, they have even released some developer hardware. Yet the term mixed reality is quit new. So during this session we hope to inform you about these evolving technologies.
-                                            </p>
-                                        </article>
-                                    </section> -->
+                                    </section>
                                 </div>
                             </div>
                         </section>
