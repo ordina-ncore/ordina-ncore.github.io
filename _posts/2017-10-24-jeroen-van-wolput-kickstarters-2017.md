@@ -60,7 +60,7 @@ These were the topics we handled:
 As mentioned before, having fun was just as important as work! We are facing each other 8 hours a day. So team spirit is a big thing. Since the first day we met there was a connection. We laughed and told some interesting stories about ourselves on our first day at Ordina. 
 Through the studies, we helped each other out and nobody was left behind. Nobody didn’t mind to give some extra explanation after the hours or to repeat the same thing a million times. To give a conclusion about the group we can give you a few characteristics about our group. We love to have fun, love to life and love to program.
 ![The new Kickstarters](img/kickstarters2017/KickstartersGroup.JPG "The new Kickstarters")
-![The new Kickstarters](img/kickstarters2017/kickstartersGroupWithSami.JPG "The new Kickstarters")
+![The new Kickstarters](img/kickstarters2017/kickstartersGroupWithSami.jpg "The new Kickstarters")
 
 ### 5. Conclusion
 
