@@ -8,7 +8,7 @@ category: Kickstarters
 comments: true
 ---
 
-** The first day of a journey will always be remembered. On august 1st over 40 open minded and enthusiastic kickstarters embarked on a journey into the unknown. A journey filled with mountains to climb and rivers to cross. One of those teams sprouted a team of 6 dedicated travelers with as destination the N-Core unit. As we travelled along we filled our bags with knowledge and experience guided by our coaches and managers. After almost 2 months we reached our destination, changed our clothes and re-embarked on a new development journey. **
+**The first day of a journey will always be remembered. On august 1st over 40 open minded and enthusiastic kickstarters embarked on a journey into the unknown. A journey filled with mountains to climb and rivers to cross. One of those teams sprouted a team of 6 dedicated travelers with as destination the N-Core unit. As we travelled along we filled our bags with knowledge and experience guided by our coaches and managers. After almost 2 months we reached our destination, changed our clothes and re-embarked on a new development journey.**
 
 ### Table of Contents
 ---
