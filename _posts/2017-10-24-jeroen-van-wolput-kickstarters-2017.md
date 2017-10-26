@@ -65,5 +65,5 @@ Through the studies, we helped each other out and nobody was left behind. Nobody
 
 ### 5. Conclusion
 
-With an open mind we started our Kickstarter training. In this training of several weeks we find our way at Ordina and learned a lot of new things or had a great repetition in several topics as listed above. At Ordina there is an excellent atmosphere to work.
+With an open mind we started our Kickstarter training. In this training of several weeks we founded our way at Ordina and learned a lot of new things or had a great repetition in several topics as listed above. At Ordina there is an excellent atmosphere to work.
 Afterwards we can say that the Kickstarter training was a good start on our new/first job and we can recommend the training to other developers who would like to have a new/first challenge.
