@@ -60,10 +60,10 @@ These were the topics we handled:
 As mentioned before, having fun was just as important as work! We are facing each other 8 hours a day. So team spirit is a big thing. Since the first day we met there was a connection. We laughed and told some interesting stories about ourselves on our first day at Ordina. 
 Through the studies, we helped each other out and nobody was left behind. Nobody minded to give some extra explanation after the hours or to repeat the same thing a million times. To give a conclusion about the group we can give you a few characteristics about our group. We love to have fun, love to life and love to program.
 
-<img src="/img/kickstarters2017/kickstartersGroup.JPG" width="100%">
+<img src="/img/kickstarters2017/kickstartersGroupWithSami.JPG" width="100%">
 
 
 ### 5. Conclusion
 
-With an open mind we started our Kickstarter training. In this training of several weeks we find our way at Ordina and learned a lot of new things or had a great repetition in several topics as listed above. At Ordina there is an excellent atmosphere to work.
+With an open mind we started our Kickstarter training. In this training of several weeks we founded our way at Ordina and learned a lot of new things or had a great repetition in several topics as listed above. At Ordina there is an excellent atmosphere to work.
 Afterwards we can say that the Kickstarter training was a good start on our new/first job and we can recommend the training to other developers who would like to have a new/first challenge.
