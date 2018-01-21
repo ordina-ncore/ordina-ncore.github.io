@@ -24,7 +24,7 @@ The exercises guided us through the implementation of the well-known CRUD action
 			
 On top of that, the course also covered different areas of form validation, along with the creation of custom async validators and custom form controls. 
 
-One thing to keep in mind is that the difficulty rises quickly throughout the different tasks. As stated above, any previous experience with Angular will be of great help when enrolling for this class. Even though Pascal & Dominic are very good at what they do and  and try their utmost best to rid you of any problems you face during the assignments, if you can’t keep up on your own you’ll eventually fall behind….
+One thing to keep in mind is that the difficulty rises quickly throughout the different tasks. As stated above, any previous experience with Angular will be of great help when enrolling for this class. Even though Pascal & Dominic are very good at what they do and try their utmost best helping you to get rid of any problems during the assignments, if you can’t keep up on your own you’ll eventually fall behind….
 
 In the end, this one-day excursion through the implementation and usage of Angular Forms and validators has been a great learning experience for me. If you have an existing Angular-background and would like to extend this knowledge, this might just be something for you, too!
 
