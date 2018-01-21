@@ -9,12 +9,12 @@ comments: false
 ---
 
 On the 7th of December 2017 Ordina gave me the chance to attend the Angular Master Class, given by Pascal Precht and Dominic Elm from Thoughtram. 
-A few days before the conference, we all received an e-mail with some instructions to set up a starting project for the course. Nothing major, just clone a Git repository, do a little bit of configuration and we should be ready to go the next day!
+A few days before the conference, we all received an email with some instructions to set up a starting project for the course. Nothing major, just clone a Git repository, do a little bit of configuration and we should be ready to go the next day!
 
 Or not… As always there were a few individuals who didn’t go through the setup and delayed the whole class. After half an hour of waiting, we were all ready to roll. Well, at least for the time being.
 For the biggest part, our group consisted of people who already had some experience with Angular. According to the instructors, not a necessity, but in retrospect a most welcome bonus.
 
-The content itself was split up in several small topics. For each topic, the instructors went over a few theoretical slides answering questions - if we had any - in the process. After that, we got the time to complete a hands-on exercise on our own, again with the possibility to yell for help when needed.
+The content itself was split up in several small topics. For each topic, the instructors went over a few theoretical slides answering questions - if we had any - in the process. After that, we got the time to complete a hands-on exercise on our own, again with the possibility to ask for help when needed.
 
 More in detail, the Master Class covered two major blocks regarding Angular Forms:
 * **Template-driven** - Everything we need to build forms declaratively
