@@ -130,3 +130,15 @@ jeroen_rombouts:
   tilte2: 
   email: jeroen.rombouts@ordina.be
   bio: Jeroen is a software developer at Ordina, mainly focused on C# back-end and front-end development in Angular. He also has a healthy obsession with functional programming techniques.
+jochen_de_scheerder:
+  first_name: Jochen
+  last_name: De Scheerder
+  github: 
+  twitter: 
+  linkedin: 
+  permalink: /author/jochen-de-scheerder/
+  avatar: jochen-descheerder.jpg
+  title: Software Engineer
+  tilte2: 
+  email: jochen.descheerder@ordina.be
+  bio: Jochen is a Software Enigneer at Ordina with a passion for web developement. His main focus is backend development but Jochen is also interested in the newest front-end technologies.
