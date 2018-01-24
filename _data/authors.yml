@@ -118,3 +118,15 @@ Sami_Chkhachkhi:
   tilte2: 
   email: sami.chkhachkhi@ordina.be
   bio: Sami Chkhachkhi is a very passionate developer, everything that involves IT is really interesting for him. Sami spent quite a lot of free time on developing/learning new technologies, especially web applications. Sami loves to interact with customers or team members, making software engineer an awesome profession!
+jeroen_rombouts:
+  first_name: Jeroen
+  last_name: Rombouts
+  github: 
+  twitter: 
+  linkedin: 
+  permalink: /author/jeroen-rombouts/
+  avatar: jeroen-rombouts.jpg
+  title: Software Developer
+  tilte2: 
+  email: jeroen.rombouts@ordina.be
+  bio: Jeroen is a software developer at Ordina, mainly focused on C# back-end and front-end development in Angular. He also has a healthy obsession with functional programming techniques.

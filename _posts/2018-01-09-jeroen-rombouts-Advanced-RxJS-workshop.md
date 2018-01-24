@@ -7,7 +7,7 @@ tags: [RxJS, conferences, NG-BE]
 category: Conferences
 comments: false
 ---
-On Thursday 7 December, early in the morning at 7:30, I made my way to the Holliday Inn near the Expo in Ghent for a full day workshop about advanced RxJS.
+On Thursday 7 December, early in the morning at 7:30, I made my way to the Holiday Inn near the Expo in Ghent for a full day workshop about advanced RxJS.
 The workshop was given by Brecht Billiet and Kwinten Pisman, collectively known as Strongbrew.
 I already had a workshop lead by these guys last year (about reactive programming with NgRx), so I knew that they know their stuff.
 
